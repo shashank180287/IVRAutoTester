@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>IVR Application Test Automatically</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"
+	type="text/javascript"></script>
+<script src="resourses/js/animate-bg.js" type="text/javascript"></script>
+<script src="resourses/js/scripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+	<div id="container">
+		<ul id="nav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Test IVR</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<div id="content">
+			<table align="center">
+				<tr>
+					<td colspan="2"><label>Application URL : </label> 
+					<input type="text" autocomplete="on" id="app_vxml_url" /></td>
+				</tr>
+				<tr>
+					<td>
+						<div id="validate-div">
+							<img id="validate_img"
+								style="height: 26px; width: 26px; margin: 5px;" alt="Loading.." />
+						</div>
+					</td>
+					<td>
+						<div id="validate-div-text">
+							<label>Validating VoiceXML...</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="func-test-div">
+							<img id="func-test_img"
+								style="height: 26px; width: 26px; margin: 5px;" alt="Loading.." />
+						</div>
+					</td>
+					<td>
+						<div id="func-test-div-text">
+							<label>Testing VoiceXML...</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="button" id="test_button"
+						value="Test" onclick="StartTesting();" /></td>
+				</tr>
+			</table>
+		</div>
+		<div id="error_panel" style="background-color: white;">Error</div>
+	</div>
+
+
+
+</body>
+</html>
